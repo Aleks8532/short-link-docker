@@ -12,7 +12,7 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - ./src:/var/www/html:delegated
+      - ./src:/var/www/html
     depends_on:
       - php
       - mysql
@@ -25,7 +25,7 @@ services:
     restart: unless-stopped
     tty: true
     ports:
-      - "3306:3306"
+      - "3307:3306"
     environment:
       MYSQL_DATABASE: homestead
       MYSQL_USER: homestead
@@ -35,6 +35,8 @@ services:
       SERVICE_NAME: mysql
     networks:
       - laravel
+    volumes:
+      - ./db:/var/lib/mysql
 
   php:
     build:
@@ -42,7 +44,7 @@ services:
       dockerfile: php.dockerfile
     container_name: php
     volumes:
-      - ./src:/var/www/html:delegated
+      - ./src:/var/www/html
     ports:
       - "9000:9000"
     networks:
@@ -77,7 +79,7 @@ services:
       dockerfile: php.dockerfile
     container_name: artisan
     volumes:
-      - ./src:/var/www/html:delegated
+      - ./src:/var/www/html
     depends_on:
       - mysql
     working_dir: /var/www/html

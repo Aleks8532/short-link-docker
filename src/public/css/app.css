@@ -1,0 +1,100 @@
+html,
+body {
+  background-color: #fff;
+  color: #636b6f;
+  font-family: "Nunito", sans-serif;
+  font-weight: 200;
+  height: 100vh;
+  margin: 0;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.flex-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.position-ref {
+  position: relative;
+}
+
+.top-right {
+  position: absolute;
+  right: 10px;
+  top: 18px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  font-size: 1.6em;
+}
+
+.links > a {
+  color: #636b6f;
+  padding: 0 25px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.m-b-md {
+  margin-bottom: 30px;
+}
+
+.link-input-checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.link-input {
+  width: 250px;
+  height: 30px;
+}
+
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: inherit;
+  padding: 0.75em 1em;
+  -webkit-appearance: none;
+  border: 1px solid transparent;
+  border-radius: 0;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  font-size: 0.9rem;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  background-color: #1779ba;
+  color: #fefefe;
+}
+
+.output-data {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  justify-content: right;
+  align-items: flex-end;
+}
+
+.output-data .item {
+  margin: 5px;
+}
+
+.input-data {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  justify-content: right;
+}
+
+.input-data .item {
+  margin: 5px;
+}
+
