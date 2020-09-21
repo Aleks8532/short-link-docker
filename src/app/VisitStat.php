@@ -21,6 +21,8 @@ class VisitStat extends Model
      */
     protected $table = 'visit_stats';
 
+    const UPDATED_AT = null;
+
     /**
      * @var array
      */
